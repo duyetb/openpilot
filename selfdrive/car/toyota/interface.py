@@ -171,14 +171,11 @@ class CarInterface(CarInterfaceBase):
 
     elif candidate == CAR.SIENNA:
       stop_and_go = True
-      #* ret.safetyConfigs[0].safetyParam = 73
       ret.wheelbase = 3.03
       ret.steerRatio = 12.325
       tire_stiffness_factor = 0.444
       ret.mass = 4590. * CV.LB_TO_KG + STD_CARGO_KG
       set_lat_tune(ret.lateralTuning, LatTunes.PID_J)
-      #* ret.lateralTuning.pid.kpV, ret.lateralTuning.pid.kiV = [[0.1], [0.01]]
-      #* ret.lateralTuning.pid.kf = 0.00007818594
 
     elif candidate == CAR.LEXUS_IS:
       ret.safetyConfigs[0].safetyParam = 77
