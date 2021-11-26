@@ -172,7 +172,7 @@ class CarInterface(CarInterfaceBase):
     elif candidate == CAR.SIENNA:
       stop_and_go = True
       ret.wheelbase = 3.03
-      ret.steerRatio = 15.5
+      ret.steerRatio = 15
       tire_stiffness_factor = 0.444
       ret.mass = 4590. * CV.LB_TO_KG + STD_CARGO_KG
       set_lat_tune(ret.lateralTuning, LatTunes.PID_J)
