@@ -21,7 +21,7 @@ class CarInterface(CarInterfaceBase):
     ret.carName = "toyota"
     ret.safetyConfigs = [get_safety_config(car.CarParams.SafetyModel.toyota)]
 
-    ret.steerActuatorDelay = 0.12  # Default delay, Prius has larger delay
+    ret.steerActuatorDelay = 0.1  # Default delay, Prius has larger delay
     ret.steerLimitTimer = 0.4
 
     ret.stoppingControl = False  # Toyota starts braking more when it thinks you want to stop
@@ -172,7 +172,7 @@ class CarInterface(CarInterfaceBase):
     elif candidate == CAR.SIENNA:
       stop_and_go = True
       ret.wheelbase = 3.03
-      ret.steerRatio = 12.325
+      ret.steerRatio = 15
       tire_stiffness_factor = 0.444
       ret.mass = 4590. * CV.LB_TO_KG + STD_CARGO_KG
       set_lat_tune(ret.lateralTuning, LatTunes.PID_J)
