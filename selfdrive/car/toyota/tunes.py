@@ -97,8 +97,8 @@ def set_lat_tune(tune, name):
       tune.pid.kiV = [0.1]
       tune.pid.kf = 0.00006
     elif name == LatTunes.PID_D:   #rav4tss2
-      tune.pid.kpV = [0.15]
-      tune.pid.kiV = [0.05]
+      tune.pid.kpV = [0.11]
+      tune.pid.kiV = [0.016]
       tune.pid.kf = 0.00004
     elif name == LatTunes.PID_E:
       tune.pid.kpV = [0.6]
