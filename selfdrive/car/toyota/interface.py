@@ -133,7 +133,7 @@ class CarInterface(CarInterfaceBase):
     elif candidate in [CAR.RAV4_TSS2, CAR.RAV4H_TSS2]:
       stop_and_go = True
       ret.wheelbase = 2.68986
-      ret.steerRatio = 14.3
+      ret.steerRatio = 12.80
       tire_stiffness_factor = 0.7933
       ret.mass = 3585. * CV.LB_TO_KG + STD_CARGO_KG  # Average between ICE and Hybrid
       set_lat_tune(ret.lateralTuning, LatTunes.PID_D)
